@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+    <style >
+    .outer-carousel{
+      height:auto;
+      width: 45%;
+      border: 2px solid yellow;
+    }
+      #div-img{
+        display: inline-block;
+        height: 220px;
+        width: 80%;
+        overflow-x: hidden;
+        overflow-y:hidden;
+        margin-left: 40px;
+        /* transition-duration: 1s; */
+      }
+      #div-img img{
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        transition-timing-function: linear;
+
+      }
+
+      .icons-prev-next{
+        display: inline-block;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        top: 100px;
+      }
+
+    </style>
+    <div class="outer-carousel">
+
+      <button class="icons-prev-next" type="button" name="button" onclick="setTimeout( myFunctionPrev,300);">
+        prev
+      </button>
+      <div id="div-img">
+
+      </div>
+      <button class="icons-prev-next" type="button" name="button" onclick="setTimeout( myFunctionNext,300);">
+        next
+      </button>
+    </div>
+
+    <script src="./new-script.js" type="text/javascript"></script>
+
+  </body>
+</html>
